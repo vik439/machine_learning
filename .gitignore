@@ -1,0 +1,48 @@
+# Add content to .gitignore
+cat > .gitignore << EOF
+# Jupyter Notebook files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data and cache files
+*.csv
+*.json
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment and virtual environment
+.env
+.venv
+venv/
+env/
+
+# Temporary files
+*.tmp
+*.temp
+EOF
